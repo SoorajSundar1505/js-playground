@@ -31,7 +31,7 @@
                 <tr>
                     <td><button onclick="convert();">Convert</button></td>
                     <td><button type="button" id="clear">Clear</button></td>
-                    <td><button>Swap</button></td>
+                    <td><button id="swap">Swap</button></td>
                 </tr>
             </table>
         </div>
@@ -49,6 +49,10 @@
                 var inp2 = document.getElementById("in")
                 inp1.value=''
                 inp2.value=''
+            })
+
+            document.getElementById("swap").addEventListener('click', function(){
+                window.location.href='inches_To_Centimeter.html'
             })
         </script>
     
