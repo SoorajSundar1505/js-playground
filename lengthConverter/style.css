@@ -1,0 +1,69 @@
+body{
+    background-image: url('https://getwallpapers.com/wallpaper/full/e/4/f/189935.jpg');
+    height: 100%;
+    background-size: auto;
+    overflow: hidden;
+}
+
+.container{
+    height: 100%;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin: auto;
+}
+
+.card {
+    height: 250px;
+    margin-top: 12%;
+    margin-bottom: auto;
+    width: 400px;
+    background-color: rgba(189, 207, 185, 0.5) !important;
+    position: relative;
+    display: flex;
+    margin-left: 36%;
+    place-content: center;
+  }
+
+  .card h3{
+    margin-top: 15%;
+    margin-left: 120%;
+    color: black;
+    word-break: initial;
+    white-space: nowrap;
+  }
+
+  input{
+    width: 100px;   
+  }
+
+  .container .wrapper{
+    height: 300px;
+    display: flex;
+    align-items: center;
+  }
+
+  .wrapper{
+    margin-right: 60%;
+  }
+
+  tbody{
+    margin-top: 20%;
+    margin-bottom: 60px;
+  }
+
+  th, td {
+    width:150px;
+    text-align:center;
+    padding:5px
+}
+
+td{
+    color: black;
+}
+
+button{
+    margin-top: 20px;
+}
