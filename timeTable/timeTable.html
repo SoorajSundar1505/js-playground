@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time-Table</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <center><h3>StudentSync: Tailored Timetables for Academic Success</h3></center>
+  <div class="container">
+    <table class="table">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Monday</th>
+            <th scope="col">Tuesday</th>
+            <th scope="col">Wednesday</th>
+            <th scope="col">Thursday</th>
+            <th scope="col">Friday</th>
+          </tr>
+        </thead>
+        <tbody id="txt-input">
+          <tr>
+            <th scope="row">9AM</th>
+                <td><input type="text" placeholder="text" ></td>
+                <td><input type="text" placeholder="text" ></td>
+                <td><input type="text" placeholder="text" ></td>
+                <td><input type="text" placeholder="text" ></td>
+                <td><input type="text" placeholder="text" ></td>
+          </tr>
+          <tr>
+            <th scope="row">11AM</th>
+                <td><input type="text" placeholder="text" ></td>
+                <td><input type="text" placeholder="text" ></td>
+                <td><input type="text" placeholder="text" ></td>
+                <td><input type="text" placeholder="text" ></td>
+                <td><input type="text" placeholder="text" ></td>
+          </tr>
+          <tr>
+            <th scope="row">1PM</th>
+                <td><input type="text" placeholder="text" ></td>
+                <td><input type="text" placeholder="text" ></td>
+                <td><input type="text" placeholder="text" ></td>
+                <td><input type="text" placeholder="text" ></td>
+                <td><input type="text" placeholder="text" ></td>
+          </tr>
+          <tr>
+            <th scope="row">3PM</th>
+                <td><input type="text" placeholder="text" ></td>
+                <td><input type="text" placeholder="text" ></td>
+                <td><input type="text" placeholder="text" ></td>
+                <td><input type="text" placeholder="text" ></td>
+                <td><input type="text" placeholder="text" ></td>
+          </tr>
+          <tr>
+            <th scope="row">5PM</th>
+                <td><input type="text" placeholder="text" ></td>
+                <td><input type="text" placeholder="text" ></td>
+                <td><input type="text" placeholder="text" ></td>
+                <td><input type="text" placeholder="text" ></td>
+                <td><input type="text" placeholder="text" ></td>
+          </tr>
+        </tbody>
+      </table>
+      <div id="note">
+        <p>Note: Personalize Your Schedule with StudentSync for Effective <br>  Time Management </p>
+      </div>  
+    </div>
+      <div class="todo">
+        <div class="para">
+          <p>ToDo Lists</p>
+      </div>
+        <input type="text" id="todoAdd" placeholder="Checklist" required>
+        <button id="add">Add</button>
+        <p id="pg"></p>
+      </div>
+
+</body>
+<script>
+
+            var list=""
+            var btnRemove=" <button onclick='remove(event)'> Remove </button>"
+            document.getElementById("add").addEventListener('click', function(event){
+                var lineBreak = document.createElement('br');
+                list = document.createElement("span")
+                var txt=document.getElementById("todoAdd")
+                list.innerHTML=txt.value+btnRemove
+                var target = document.getElementById("pg")
+                target.parentNode.insertBefore(lineBreak,target.nextSibling)
+                target.parentNode.insertBefore(list,target.nextSibling)
+                txt.value=""
+            })
+
+
+
+            // document.getElementById('rmv').addEventListener('click', function(event){
+            //     event.target.parentElement.remove()
+            // })
+
+            function remove(event){
+                event.target.parentElement.remove()
+            }
+
+  </script>
+</html>
+
+
