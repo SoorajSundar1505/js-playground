@@ -1,0 +1,66 @@
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 40%;
+    position: relative;
+  }
+  th,td{
+    width: 10%;
+    height: 10%;
+  }
+
+  table td input {
+    height: 100%;
+    width: 100%;
+    border: none;
+    padding: 4px;
+    box-sizing: border-box;
+    display: inline-block;
+  }
+
+  .row{
+    size: 2%;
+  }
+
+  th{
+    font-size: small;
+  }
+
+  table{
+    margin-left: 2%;
+    margin-top: 5%;
+  }
+
+  body {
+    background-image: url("bg-img.png");
+    background-size: cover;
+    font-style: italic;
+    color: brown;
+  }
+
+  tr:nth-child(even), thead {
+    background-color: #f2c4c4;
+  }
+
+#btn-Clear{
+    margin-top: 2%;
+    margin-left: 20%;
+}
+
+#note{
+  margin-left: 2%;
+  margin-top: 8%;
+  color: black;
+}
+.container {
+  display: flex;
+}
+
+.todo{
+  margin-top: 3%;
+  margin-left: 17%;
+}
+
+.para{
+  margin-left: 4%;
+}
