@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital clock</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <center>
+        
+        <div id="timezone">
+            <h3 id="clock"></h3>
+        </div>
+        <div id="alarm">
+            <button>Set Alarm</button>
+        </div>
+    </center>
+
+    <script>
+        function currDate(){
+            var now = new Date().toLocaleString()
+            document.getElementById('clock').innerHTML=now
+        }
+        setInterval(currDate, 1000);
+    </script>
+</body>
+
+</html>

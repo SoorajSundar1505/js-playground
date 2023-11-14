@@ -1,0 +1,11 @@
+#timezone{
+    width: 250px;
+    border: 10px gray;
+    padding: 30px;
+    margin: 20px;
+    background-color: rgb(33, 32, 32);
+}
+
+#clock{
+    color: red;
+}
