@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
         selectedDate.addEventListener("input", function() {
             datePopup.style.display = "none";
-            showEventForm(dayElement);
+            // showEventForm(dayElement);
         });
     }
 
@@ -87,10 +87,19 @@ document.addEventListener("DOMContentLoaded", function() {
         displayCalendar(currentMonth, currentYear);
     }
 
-    function showEventForm(dayElement) {
-        const eventForm = document.createElement("div");
-        eventForm.classList.add("event");
-        eventForm.textContent = "Event";
-        dayElement.appendChild(eventForm);
-    }
+    // function showEventForm(dayElement) {
+    //     const eventForm = document.createElement("div");
+    //     eventForm.classList.add("event");
+    //     eventForm.textContent = "Event";
+    //     dayElement.appendChild(eventForm);
+    // }
+
+   
+
+   
 });
+
+document.getElementById("closepopup").addEventListener('click', function(){
+        const datePopup = document.getElementById("datePopup");
+        datePopup.style.display = "none";
+})
