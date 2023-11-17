@@ -71,7 +71,7 @@ nav a{
     float:left;
   }
 
-  .card{
+  /* .card{
     position: relative;
     width: 200px;
     height: 200px;
@@ -81,10 +81,88 @@ nav a{
     display:inline;
     float: inline-end;
     margin-right: 80%;
+  } */
+
+  .home,#openModalBtn{
+    display:block;
+    margin-left: 35%;
+    margin-top: 3%;
   }
 
-  .home{
-    display:block;
-    margin-left: 30%;
-    background-color: rgb(241, 243, 244);
+
+  .calender{
+    margin-left: 25%;
   }
+
+  .history{
+    margin-top: 15%;
+    margin-left: 25%;
+  }
+
+  /* styles.css */
+/* body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+} */
+
+.calendar {
+    width: 300px;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    background-color: #4285f4;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 1px;
+}
+
+.day {
+    position: relative;
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+    cursor: pointer;
+}
+
+.day:hover {
+    background-color: #f1f1f1;
+}
+
+.event {
+    background-color: #4caf50;
+    color: white;
+    padding: 2px;
+    border-radius: 4px;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+}
+
+.popup h3 {
+    margin-bottom: 10px;
+}
+
+
